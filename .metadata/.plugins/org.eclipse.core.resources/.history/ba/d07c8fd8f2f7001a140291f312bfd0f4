@@ -97,7 +97,7 @@ public class duotai_xuexi {
 		Person p3 = new Womman();
 		p3.eat();
 //		Man m4 = new Person();              ----- error 
-		// ***************************************  多态的使用 -----git2----3
+		// ***************************************  多态的使用 -----git2
 		System.out.println("*************************************************************");
 		duotai_xuexi d1 = new duotai_xuexi();
 		d1.func(new Man());
