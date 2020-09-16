@@ -1,0 +1,58 @@
+package helloword2;
+
+/**
+ * 	多态性的理解：
+ * 		1：一个事物的多种形态
+ * @author PC
+ *
+ */
+class Person{
+	String name;
+	int age;
+	public void eat() {
+		System.out.println("吃饭");
+	}
+	public void run() {
+		System.out.println("跑");
+	}
+}
+class Man extends Person{
+	boolean smoking;
+	public void earnMony() {
+		System.out.println("挣钱");
+	}
+	public void eat() {
+		System.out.println("多吃饭");
+	}
+	@Override
+	public void run() {
+		System.out.println("多跑");
+	}
+}
+class Womman extends Person{
+	boolean isbeuty;
+	public void goshopping() {
+		System.out.println("喜欢购物");
+	}
+	@Override
+	public void eat() {
+		System.out.println("少吃");
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("少跑");
+	}
+}
+public class duotai_xuexi {
+	public static void main(String[] args) {
+		// ************************************    正常的 对象创建与调用
+		Person p1 = new Person();
+		p1.eat();
+		Man m1 = new Man();
+		m1.earnMony();
+		// ***************************************  多态
+		Person p2 = new Man();
+		p2.eat();
+	}
+}

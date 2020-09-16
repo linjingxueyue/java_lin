@@ -1,0 +1,31 @@
+package helloword;
+
+public class helloword {
+	static int a ;
+	public static void main (String[] args) {
+			String name = "linjing";
+			String name2 = name.substring(0,name.length());
+			System.out.println(name2);
+			if(name.equals(name2)) {
+				System.out.println("---------------------"+ a);
+			} 
+			if(name==name2) {
+				System.out.println("---------------------");
+			}
+			System.out.println("**********************************");
+			/* 使用构造器创建两个对象 */
+		      Employee empOne = new Employee("RUNOOB1");
+		      Employee empTwo = new Employee("RUNOOB2");
+		 
+		      // 调用这两个对象的成员方法
+		      empOne.empAge(26);
+		      empOne.empDesignation("高级程序员");
+		      empOne.empSalary(1000);
+		      empOne.printEmployee();
+		 
+		      empTwo.empAge(21);
+		      empTwo.empDesignation("菜鸟程序员");
+		      empTwo.empSalary(500);
+		      empTwo.printEmployee();
+	}
+}

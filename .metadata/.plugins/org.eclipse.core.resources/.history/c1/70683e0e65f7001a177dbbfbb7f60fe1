@@ -1,0 +1,94 @@
+package helloword2;
+
+/**
+ * 	a.多态性的理解：
+ * 		1：一个事物的多种形态
+ *  
+ *  b.何为多态性：
+ *   	1：将父类的引用指向子类的对象 （子类的对象赋给父类的引用）
+ *   			当调用子父类同名同参数的方法时候，调用的是子类重写后的方法 ----- 虚拟方法调用
+ *   			只能调用父类中已有的方法，不同调用子类 独有的方法 		----- 编译看左边，运行看右边
+ * 
+ *  c. 多态的使用：虚拟方法调用
+ *  		有了对象的多态性以后，我们在编译期，只能调用父类声明过的方法。在执行期，d调用的是子类重写
+ *  	  过的方法
+ *  
+ *  d. 多态的使用前提：
+ *  		1：类的继承关系
+ *  		2：要有方法的重写（否咋没必要使用多态）
+ *  
+ *  e.  为什么要有多态性：				
+ *  		----  看 func 函数的使用
+ *  		
+ *  		
+ * @author PC
+ *
+ */
+class Person{
+	String name;
+	int age;
+	int id=1001;
+	public void eat() {
+		System.out.println("吃饭");
+	}
+	public void run() {
+		System.out.println("跑");
+	}
+}
+class Man extends Person{
+	boolean smoking;
+	int id=1002;
+	public void earnMony() {
+		System.out.println("挣钱");
+	}
+	public void eat() {
+		System.out.println("多吃饭");
+	}
+	@Override
+	public void run() {
+		System.out.println("多跑");
+	}
+}
+class Womman extends Person{
+	boolean isbeuty;
+	public void goshopping() {
+		System.out.println("喜欢购物");
+	}
+	@Override
+	public void eat() {
+		System.out.println("少吃");
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("少跑");
+	}
+}
+public class duotai_xuexi {
+	public void func(Person person) {
+		person.eat();
+		person.run();
+	}
+	public static void main(String[] args) {
+		// ************************************    正常的 对象创建与调用
+		Person p1 = new Person();
+		p1.eat();
+		Man m1 = new Man();
+		m1.earnMony();
+		System.out.println("*************************************************************");
+		// ***************************************  多态的理解
+		//      父类的引用指向 子类的 对象
+		Person p2 = new Man();
+		p2.eat();	
+		p2.run();
+		System.out.println(p2.id);
+//		p2.earnMony()						-- error 
+		Person p3 = new Womman();
+		p3.eat();
+		// ***************************************  多态的使用
+		System.out.println("*************************************************************");
+		duotai_xuexi d1 = new duotai_xuexi();
+		d1.func(new Man());
+		d1.func(new Womman());
+	}
+}

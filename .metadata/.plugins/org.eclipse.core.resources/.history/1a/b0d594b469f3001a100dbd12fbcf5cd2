@@ -1,0 +1,15 @@
+package helloword2;
+
+class Mother{
+	public void eat() {
+		System.out.println("eat");
+	}
+}
+class son extends Mother{
+	public void eat(String str) {
+		System.out.println(str);
+	}
+}
+public class overwrite {
+
+}

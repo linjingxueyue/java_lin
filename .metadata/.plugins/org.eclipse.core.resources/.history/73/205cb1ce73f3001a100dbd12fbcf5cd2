@@ -1,0 +1,16 @@
+package helloword2;
+
+import helloword.son4_object_01;
+
+/**
+ *  与 helloword下的son4_object_01.java文件一起测试修饰符的使用范围
+ * @author PC
+ *
+ */
+public class Son1 extends son4_object_01 {
+	public static void main(String[] args) {
+		son4_object_01 s1 = new son4_object_01();
+		
+		System.out.println("---"+s1.name4);
+	}
+}

@@ -1,0 +1,35 @@
+package helloword2;
+/**
+ *  方法的重写：
+ *  	方法的声明包括： 权限修饰符  返回值 方法名  （参数列表）{
+ *  							方法体
+ *  					 }
+ *  	子类重写的方法的 方法名 与 参数列表 与  父类被重写的方法一致
+ *  	子类重写方法的权限修饰符 不小于 父类被重写方法的权限修饰符
+ *  			特殊情况： 子类 不能重写 父类被声明
+ * @author PC
+ *
+ */
+class Mother{
+	public void eat() {
+		System.out.println("eat");
+	}
+}
+class son extends Mother{
+	
+	public void eat() {
+		System.out.println("eat2 ...");
+	}
+	public void eat(String str) {
+		System.out.println(str);
+	}
+}
+public class overwrite {
+
+		public static void main(String[] args) {
+		
+			son s = new son();
+			s.eat();
+			s.eat("sssss");
+		}
+}

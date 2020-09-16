@@ -1,0 +1,10 @@
+package helloword2;
+
+class Mother{
+	public void eat() {
+		System.out.println("eat");
+	}
+}
+public class overwrite {
+
+}

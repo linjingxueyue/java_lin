@@ -1,0 +1,30 @@
+package helloword2;
+/**
+ *  方法的重写：
+ *  	方法的声明包括： 权限修饰符  返回值 方法名  参数列表
+ * @author PC
+ *
+ */
+class Mother{
+	public void eat() {
+		System.out.println("eat");
+	}
+}
+class son extends Mother{
+	
+	public void eat() {
+		System.out.println("eat2 ...");
+	}
+	public void eat(String str) {
+		System.out.println(str);
+	}
+}
+public class overwrite {
+
+		public static void main(String[] args) {
+		
+			son s = new son();
+			s.eat();
+			s.eat("sssss");
+		}
+}

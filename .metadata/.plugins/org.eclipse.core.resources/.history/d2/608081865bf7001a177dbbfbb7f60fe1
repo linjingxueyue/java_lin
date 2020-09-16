@@ -1,0 +1,28 @@
+package helloword2;
+
+class Person{
+	String name;
+	int age;
+	public void eat() {
+		System.out.println("≥‘∑π");
+	}
+	public void run() {
+		System.out.println("≈‹");
+	}
+}
+class Man extends Person{
+	boolean smoking;
+	public void earnMony() {
+		System.out.println("’ı«Æ");
+	}
+	public void eat() {
+		System.out.println("∂‡≥‘∑π");
+	}
+	@Override
+	public void run() {
+		System.out.println("∂‡≈‹");
+	}
+}
+public class duotai_xuexi {
+
+}

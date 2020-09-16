@@ -1,0 +1,25 @@
+package helloword2;
+/**
+ *  super 的理解：
+ *  	子类中直接使用 属性，代表的是this.属性，此时先在子类中查找该属性，不存在时候，再去父类中查找该属性。
+ *    直接使用super.属性的方式，就意味着不在子类中查询，直接在父类中查询.
+ *    对于子类没有重写父类方法或属性时候，使用 this还是super 调用属性和方法没有区别
+ *    	当子类重写了父类方法，而又想要调用父类被重写的方法时候，可以直接用super.方法的形式调用
+ * @author PC
+ *
+ */
+class Father{
+	public Father() {
+		System.out.println("+++++++");
+	}
+	int id = 1001;
+}
+public class super_lijie extends Father {
+	int id = 1002;
+	public super_lijie() {
+		System.out.println("this.id: "+ this.id+" super.id: "+super.id);
+	}
+	public static void main(String[] args) {
+		super_lijie sl = new super_lijie();
+	}
+}

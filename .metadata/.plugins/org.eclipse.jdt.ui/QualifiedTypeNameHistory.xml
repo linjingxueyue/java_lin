@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="sun.net.www.content.text.plain"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="sun.tools.tree.ThisExpression"/>
+    <fullyQualifiedTypeName name="helloword.son3"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.ui.action.ShowAction"/>
+    <fullyQualifiedTypeName name="helloword.son4_object_01"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.ui.SysPropsPanel"/>
+    <fullyQualifiedTypeName name="helloword2.Test"/>
+    <fullyQualifiedTypeName name="helloword2.Mother"/>
+    <fullyQualifiedTypeName name="helloword2.son"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="helloword2.son2"/>
+    <fullyQualifiedTypeName name="helloword2.Son1"/>
+    <fullyQualifiedTypeName name="helloword2.Father"/>
+    <fullyQualifiedTypeName name="helloword2.this_xuexi"/>
+    <fullyQualifiedTypeName name="helloword2.super_lijie"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="helloword2.duotai_xuexi"/>
+    <fullyQualifiedTypeName name="java.lang.Error"/>
+    <fullyQualifiedTypeName name="helloword2.Womman"/>
+    <fullyQualifiedTypeName name="helloword2.Person"/>
+    <fullyQualifiedTypeName name="helloword2.Man"/>
+</qualifiedTypeNameHistroy>
