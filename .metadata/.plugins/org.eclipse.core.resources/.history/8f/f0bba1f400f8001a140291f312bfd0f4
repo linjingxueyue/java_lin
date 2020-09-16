@@ -1,0 +1,17 @@
+package helloword;
+
+public class String_xuexi {
+	public static void main(String[] args) {
+		String name = "linjing";
+		String name2 = new String("linjing");
+		
+		System.out.println(name == name2);
+		System.out.println("_____________________________________");
+		String s1 = "hello";
+		String s2 = "world";
+		String s3 = "helloworld";
+		String s4 = s1 + s2;
+		String s4 = "hello" + "world";
+		System.out.println(s3 == s4);
+	}
+}

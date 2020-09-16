@@ -1,0 +1,9 @@
+package helloword;
+
+public class String_xuexi {
+	public static void main(String[] args) {
+		String name = "linjing";
+		String name2 = "linjing";
+		System.out.println(name == name2);
+	}
+}
