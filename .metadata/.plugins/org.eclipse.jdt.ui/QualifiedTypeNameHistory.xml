@@ -19,10 +19,11 @@
     <fullyQualifiedTypeName name="helloword2.Father"/>
     <fullyQualifiedTypeName name="helloword2.this_xuexi"/>
     <fullyQualifiedTypeName name="helloword2.super_lijie"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="helloword2.duotai_xuexi"/>
     <fullyQualifiedTypeName name="java.lang.Error"/>
     <fullyQualifiedTypeName name="helloword2.Womman"/>
     <fullyQualifiedTypeName name="helloword2.Person"/>
     <fullyQualifiedTypeName name="helloword2.Man"/>
+    <fullyQualifiedTypeName name="helloword.String_xuexi"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

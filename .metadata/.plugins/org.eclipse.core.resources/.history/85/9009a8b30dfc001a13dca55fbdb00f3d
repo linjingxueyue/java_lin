@@ -1,0 +1,12 @@
+package helloword2;
+
+/**
+ * 	接口(interface)的理解：
+ * 		0： 接口 与 类 是两种等级别 的结构。 但是 一个类的父类只能有一个，接口可以有多个
+ * 		1： 解决JAVA没有多继承的缺点，
+ * @author PC
+ *
+ */
+public class jiekou_xuexi {
+
+}

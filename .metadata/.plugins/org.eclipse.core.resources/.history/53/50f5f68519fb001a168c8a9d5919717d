@@ -1,0 +1,27 @@
+package helloword2;
+/**
+ *  main() 方法的使用说明：
+ *  	1： 作为程序的入口
+ *  	2： 也是一个普通的静态方法。
+ *  	3： 一个文件中，每个类都可以由一个main函数，运行时候手动选择作为入口的main函数
+ *  	
+ * @author PC
+ *
+ */
+public class main_xuexi {
+	public void show() {
+		
+	}
+	public static void main(String[] args) {	// 入口
+		Main.main(new String[100]);
+		show()
+	}
+}
+class Main{
+	public static void main(String[] args) {
+		for(int i=0;i<args.length;i++) {
+			args[i]="args_"+i;
+			System.out.println(args[i]);
+		}
+	}	
+}

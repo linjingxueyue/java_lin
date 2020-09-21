@@ -1,0 +1,27 @@
+package helloword2;
+/**
+ * 	代码块的学习：
+ * 		
+ * 		1： 代码块的作用：用来初始化类、对象。
+ * 		2： 代码块如果有修饰的话：只能用static。
+ * 		3： 分为： 静态代码块与非静态代码块
+ * 		4：  静态代码块：
+ * 		5：  非静态代码块：
+ * 
+ * @author PC
+ *
+ */
+class Tset{
+	public static String name="linjing";
+	// 静态代码块：
+	static {
+		
+	}
+	// 非静态代码块：
+	{
+		
+	}
+}
+public class daimakuai_xuexi {
+
+}

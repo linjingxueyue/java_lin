@@ -1,0 +1,67 @@
+package helloword2;
+
+import com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator;
+
+/**
+ *   根据这个例子 观察执行顺序:
+ *   	由 父 及 子、静态先行
+ * @author PC
+ *
+ */
+class Root{
+	static {
+		System.out.println("Root的静态初始化块");
+	}
+	{
+		System.out.println("Root 的普通初始化块");
+	}
+	public Root(){
+		System.out.println("Root的无参构造器");
+	}
+}
+
+class Mid extends Root{
+	static {
+		System.out.println("Mid的静态初始化块");
+	}
+	{
+		System.out.println("Mid 的无参初始化块");
+	}
+	public Mid() {
+		System.out.println("Mid 的 无参构造器");
+	}
+	public Mid(String msg) {
+		this();
+			System.out.println("Mid的带参构造器，msg: "+msg);
+	}
+}
+
+class Leaf extends Mid{
+	static int age;
+	static {
+		System.out.println("leaf的静态初始化块1");
+	}
+    {
+		System.out.println("leaf的普通初始化块");
+	}
+	static {
+		System.out.println("leaf的静态初始化块2");
+	}
+    public Leaf() {
+    	super("linjing");
+    	System.out.println("Leaf 构造器");
+    }
+}
+public class jiazaishunxu_xuexi {
+	public static void main(String[] args) {
+//		Leaf.age = 10;
+		new Leaf();
+	}
+}
+
+class order{
+	{
+		id= 4；
+	}
+	int id = 3;
+}

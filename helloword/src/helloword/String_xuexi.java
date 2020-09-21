@@ -23,5 +23,6 @@ public class String_xuexi {
 		System.out.println(s3 == s6);
 		System.out.println(s3 == s4);
 		System.out.println(s3 == s5);
+		
 	}
 }

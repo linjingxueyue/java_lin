@@ -1,0 +1,36 @@
+package helloword2;
+
+/**
+ *  abstract 的理解：
+ *  
+ *  	1： 用来修饰的结构有： 类、方法
+ *  
+ *  	2： abstract 修饰类 时的特点：
+ *  		1：此类不能实例化
+ *  		2：此类即使不能够实例化对象，也有构造器。
+ *  		3：开发过程中，都会提供抽象类的子类，让子类对象实例化，完成相关的操作。
+ *  
+ *  	3：abstract 修饰方法：
+ *  		1：抽象方法只有方法的声明，没有方法体。
+ *  		2：包含抽象方法的类，一定是一个抽象类。反之，抽象类中可以没有抽象方法。
+ *  		3: 子类只有重写了父类中所有的抽象方法后，才可以 实例化。
+ *  		4： 若此类没有重写父类中所有的抽象方法，则此类也是一个抽象类。
+ * @author PC
+ *
+ */
+public class abstract_xuexi {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class AA2{
+	public static void show() {
+		System.out.println("AA2");
+	}
+}
+class BB2 extends AA2{
+	public static void show() {
+		System.out.println("BB2");
+	}
+}

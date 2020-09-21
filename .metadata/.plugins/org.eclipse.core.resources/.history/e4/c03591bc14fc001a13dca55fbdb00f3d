@@ -1,0 +1,33 @@
+package helloword2;
+/**
+ *  ½Ó×Åjiekou_xuexi
+ * @author PC
+ *
+ */
+public class jiekou_xuexi2 {
+
+}
+
+class Computer{
+	public void transer(USB usb) {
+		
+	}
+}
+interface USB{
+	void start();
+	void end();
+}
+
+class Flash implements USB{
+
+	@Override
+	public void start() {
+		System.out.println("Flsh usb start");
+	}
+
+	@Override
+	public void end() {
+		System.out.println("Flash usb end ");
+	}
+	
+}

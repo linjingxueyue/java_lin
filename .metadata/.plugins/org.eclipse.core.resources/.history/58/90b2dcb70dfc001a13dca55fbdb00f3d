@@ -1,0 +1,28 @@
+package helloword2;
+
+/**
+ * 	接口(interface)的理解：
+ * 
+ * 		0： 接口 与 类 是两种等级别(并列) 的结构。 但是 一个类的父类只能有一个，接口可以有多个
+ * 
+ * 		1： 解决JAVA没有多继承的缺点，
+ * 
+ * 		2： 接口的成员：
+ * 			 JDK7 及 以前： 只能定义全局常量 及 抽象方法.(同时，全局常量的定义可以省略 public static final 关键字 )
+ * 					
+ * 			 JDK8及以后：   除7中的意外，还可定义静态方法，默认方法。
+ * @author PC
+ *
+ */
+public class jiekou_xuexi {
+
+}
+
+interface Flyable{
+	//  全局常量
+	 int MAX_SPEED = 7900;
+	
+	public static final int MIN_SPEED = 0;
+	
+	// 抽象方法
+}

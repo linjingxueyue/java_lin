@@ -1,0 +1,38 @@
+package helloword2;
+/**
+ *  接着jiekou_xuexi
+ * @author PC
+ *
+ */
+public class jiekou_xuexi2 {
+	public static void main(String[] args) {
+		Computer computer = new Computer();
+		computer.transer(new Flash());
+	}
+}
+
+class Computer{
+	public void transer(USB usb) {
+		usb.start();
+		System.out.println("正在进行传承数据");
+		usb.end();
+	}
+}
+interface USB{
+	void start();
+	void end();
+}
+
+class Flash implements USB{
+
+	@Override
+	public void start() {
+		System.out.println("Flsh usb start");
+	}
+
+	@Override
+	public void end() {
+		System.out.println("Flash usb end ");
+	}
+	
+}

@@ -1,0 +1,39 @@
+package helloword2;
+/**
+ * 	代码块的学习：
+ * 		
+ * 		1： 代码块的作用：用来初始化类、对象。
+ * 		2： 代码块如果有修饰的话：只能用static。
+ * 		3： 分为： 静态代码块与非静态代码块
+ * 		4：  静态代码块：
+ * 					随着类的加载而执行。
+ * 					只能执行一次。
+ * 					
+ * 		5：  非静态代码块：
+ * 					随着对象的创建而执行
+ * 					每创建一个对象，都执行一次非静态代码块
+ * 					可以在创建对象时候，对于对象的属性进行初始化。
+ * @author PC
+ *
+ */
+class Test_block{
+	int age ;
+	public static String name="linjing";
+	// 静态代码块：
+	static {
+		name = "!!!!!!!";
+		System.out.println("adsasdasdasd"+name);
+	}
+	// 非静态代码块：
+	{
+		System.out.println(name);
+	}
+}
+public class daimakuai_xuexi {
+	public static void main(String[] args) {
+
+		Test_block.name = "------------";
+		Test_block b1 = new Test_block();
+		Test_block b2 = new Test_block();
+	}
+}
